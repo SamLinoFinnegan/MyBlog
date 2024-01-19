@@ -1,4 +1,27 @@
 {% extends "blog/base.html" %}
+{% load static %}
 {% block content %}
-    <h1>Blog About</h1>
+<div class="about-container">
+    <div class="about-image">
+        <img src="{% static 'blog/img/castel.jpg' %}" alt="about image">
+    </div>
+    <h1 class="display-4 text-center">About</h1>
+    <hr class="my-4">
+
+    <p class="lead text-center">Welcome to My Blog, your one-stop destination for thought-provoking content, insightful commentary, and engaging discussions.</p>
+
+    <p class="text-center">Our blog is a platform for sharing ideas, connecting with others, and learning from each other's experiences. We believe that everyone has something valuable to share, and we encourage our readers to contribute to the conversation.</p>
+
+    <p class="text-center">Whether you're a seasoned writer or a budding blogger, we're always looking for new voices to join us. Here are just a few of the things you can expect to find on [Blog App Name]:</p>
+
+    <ul class="list-group text-center">
+        <li class="list-group-item">High-quality content: We take pride in publishing insightful and thought-provoking articles that will make you think and learn.</li>
+        <li class="list-group-item">Engaging discussions: Our readers are passionate about the topics we cover, and we encourage them to share their thoughts and perspectives in the comments section.</li>
+        <li class="list-group-item">A diverse community: We welcome bloggers and readers from all walks of life, and we strive to create a space where everyone feels welcome and respected.</li>
+    </ul>
+
+    <p class="text-center">We invite you to join our community of bloggers and readers. Sign up for our newsletter to stay up-to-date on the latest posts, and feel free to leave a comment on any article that piques your interest. Together, we can create a vibrant online space where we can learn, grow, and connect with each other.</p>
+
+    <p class="text-center text-muted">Thank you for visiting!</p>
+</div>
 {% endblock %}
