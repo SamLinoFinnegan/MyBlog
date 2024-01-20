@@ -1,0 +1,22 @@
+{% extends "blog/base.html" %}
+{% load static %}
+{% block content %}
+<div class="container-fluid welcome">
+    <div class="welcome-img">
+        <img src="{% static 'blog/img/welcome.jpeg' %}" alt="welcome image">
+    </div>
+    <div class="row justify-content-center align-items-center vh-100">
+        <h1 class="display-4">Welcome to my Blog!</h1>
+        <p class="lead">We are excited to have you here.</p>
+        <hr class="my-4">
+        <p>
+
+            This is a space where I share my thoughts, experiences, and ideas on various topics. Whether you're looking for inspiration, information, or just a little bit of entertainment, I hope you'll find something here that piques your interest.
+            <br/>
+            I'm passionate about learning new things and sharing what I know with others. My blog is a reflection of that passion. I want to create a community of like-minded individuals who are curious about the world and eager to share their own perspectives.
+            <br/>
+            So, if you're looking for a place to connect with others, learn new things, and explore new ideas, I invite you to join me on this journey.</p>
+        <a class="btn btn-primary btn-lg" href="{% url 'login' %}">Login</a>
+    </div>
+</div>
+{% endblock %}

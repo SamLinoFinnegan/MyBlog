@@ -5,7 +5,19 @@ from users.models import Profile
 from .models import Post
 from django.contrib.auth.models import User
 
-# Create your views here.
+def welcome_view(request):
+ 
+    context = {
+        "title":"Welcome to my blog"
+    }
+    return render(request, "blog/welcome_blog.html", context)
+
+def about(request):
+    context = {
+        "title":"About"
+    }
+    return render(request, "blog/about.html", context)
+
 class Home(ListView):
     model = Post
     template_name = "blog/home.html"
@@ -89,17 +101,3 @@ class DeletePost(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
             return True
         else:
             return False
-        
-
-
-def about(request):
-    context = {
-        "title":"About"
-    }
-    return render(request, "blog/about.html", context)
-
-def content(request):
-    context = {
-        "title":"Content"
-    }
-    return render(request, "blog/content.html", context)

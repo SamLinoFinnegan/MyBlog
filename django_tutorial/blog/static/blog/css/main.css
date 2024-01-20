@@ -120,3 +120,21 @@ body {
     margin-bottom: 50px ;
 
   }
+ .welcome{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+ }
+ .welcome-img{
+  width: 400px;
+  height: 400px;
+  margin-top: 50px ;
+  margin-bottom: 50px ;
+ }
+ .welcome-img img{
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+ }
