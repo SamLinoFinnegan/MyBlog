@@ -5,10 +5,9 @@ A simple blogging application built with Django, a popular Python web framework.
 ## Features
 
 * Create, read, update, and delete blog posts
-* Comment on blog posts
 * User authentication and registration
-* Customizable themes
-* RSS feed
+
+
 
 ## Requirements
 
