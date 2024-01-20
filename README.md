@@ -21,7 +21,7 @@ A simple blogging application built with Django, a popular Python web framework.
 ```bash
 git clone [https://github.com/SamLinoFinnegan/MyBlog.git](https://github.com/SamLinoFinnegan/MyBlog.git)
 
-cd Blog-App
+cd MyBlog
 python3 -m venv venv
 ```
 # Windows
@@ -52,7 +52,7 @@ If you would like to contribute to the Django Blog App, please fork the reposito
 
 ## License
 
-The Django Blog App is licensed under the MIT License.
+The Django MyBlog App is licensed under the MIT License.
 
 ## Acknowledgments
 
@@ -67,7 +67,8 @@ This project was inspired by the following resources:
 * The database is populated with sample data for development purposes. You can reset the database by running the following command:
 
 bash
+```
 python manage.py reset-db
-
+```
 
 * To deploy the Django Blog App to production, you can use a service like Heroku or AWS Elastic Beanstalk.
